@@ -8,5 +8,3 @@ services:
     ports:
       - port: 7474
         protocol: http
-      - port: 7687
-        protocol: tcp
