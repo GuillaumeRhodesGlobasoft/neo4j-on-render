@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: neo4j-public
+    env: docker
+    dockerfilePath: ./Dockerfile.neo4j
+    plan: free
+    autoDeploy: false
+    ports:
+      - port: 7474
+        protocol: http
+      - port: 7687
+        protocol: tcp
